@@ -1,0 +1,21 @@
+.navbar-custom{
+  width: 100%;
+  background-color: #4FB9BB;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 5%;
+}
+.btn-exit{
+  border: none;
+  background-color: transparent;
+  color: #fff;
+}
+
+.btn-exit:hover{
+  font-size: 28px;
+}
+.btn-exit:active{
+  color: #323232;
+}

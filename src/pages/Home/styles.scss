@@ -1,0 +1,55 @@
+$highlight-color: #323232 !default;
+@import '~react-pro-sidebar/dist/scss/styles.scss';
+*{
+    margin: 0;
+    padding: 0;
+}
+.btn-burguer{
+  color: #4FB9BB;
+  background-color: transparent;
+  width: 20%;
+  border: none;
+}
+.btn-burguer:hover{
+  color: #8db8b9;
+}
+.btn-burguer:active{
+  color: #28b5b7;
+}
+
+.btn-burguer-collapsed{
+  color: #4FB9BB;
+  background-color: transparent;
+  width: 100%;
+  border: none;
+  padding: 8px;
+}
+
+.container-app{
+    height: 100vh;
+    background-color: #ccc;
+
+}
+
+.pro-sidebar{
+    background-color: #fff;
+}
+
+.menu-link{
+ background-color: #fff;
+    color: #323232;
+    font-size: 16px;
+}
+
+.menu-link-collapsed{
+  display: none;
+  transition: 1s ease;
+}
+
+.menu-link-selected{
+    background-color: #F0F2F5;
+}
+
+.blue-icon{
+    color: #4FB9BB;
+}

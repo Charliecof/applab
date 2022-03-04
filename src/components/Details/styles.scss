@@ -1,0 +1,32 @@
+.btn-details{
+  border: none;
+  background-color: transparent;
+  border-radius: 4px;
+  margin: 5px;
+  padding: 3px;
+}
+
+.edit{
+  color: #4FB9BB;
+}
+.delete{
+  color: #EB5757;
+}
+
+.view{
+  color: #323232;
+}
+
+.edit:hover{
+  color: #fff;
+  background-color: rgba(79, 185, 187, 0.8);
+}
+.delete:hover{
+  color: #fff;
+  background-color: rgba(235, 87, 87, 0.8);
+}
+
+.view:hover{
+  color: #fff;
+  background-color: rgba(50, 50, 50, 0.8);
+}
