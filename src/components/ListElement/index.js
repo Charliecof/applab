@@ -3,8 +3,21 @@ import './styles.scss'
 import Details from "../Details";
 import Status from "../Status";
 import Admin from "../Admin";
-function Index({data, headers}) {
-
+const Index = ({data, headers})=> {
+    console.log(data)
+    const tableBody = data.admins.map(admin => {
+        return (
+            <tr>
+                <td data-label="Administradores"><Admin name={admin.name} urlImage={admin.urlImage}/></td>
+                <td data-label="Area">{admin.area}</td>
+                <td data-label="Email">{admin.email}</td>
+                <td data-label="Estatus" >
+                    <Status status={admin.status}/>
+                </td>
+                <td data-label="Detalles"><Details id={admin.id}/></td>
+            </tr>
+        )
+    });
     return (
         <table>
             <thead>
@@ -15,22 +28,14 @@ function Index({data, headers}) {
             </tr>
             </thead>
             <tbody>
-            {data.map(admin => {
-                return (
-                    <tr>
-                        <td data-label="Administradores"><Admin name={admin.name} urlImage="https://upload.wikimedia.org/wikipedia/commons/5/5f/Alberto_conversi_profile_pic.jpg"/></td>
-                        <td data-label="Area">{admin.area}</td>
-                        <td data-label="Email">{admin.email}</td>
-                        <td data-label="Estatus" >
-                            <Status status={admin.status}/>
-                        </td>
-                        <td data-label="Detalles"><Details id={admin.id}/></td>
-                    </tr>
-                )
-            })}
+            {data!=null || data ? tableBody : null}
             </tbody>
         </table>
     );
 }
 
 export default Index;
+
+Index.defaultProps={
+    data:[]
+}

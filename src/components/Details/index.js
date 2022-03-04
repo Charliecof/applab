@@ -7,8 +7,16 @@ import {Link} from 'react-router-dom'
 function Index({id}) {
     return (
         <div>
-            <button className="btn-details edit"><AiOutlineEdit/></button>
-            <button className="btn-details delete"><BiTrash/></button>
+            <button className="btn-details edit">
+                <Link to={`/edit?id=${id}`}>
+                    <AiOutlineEdit style={{color:'#4FB9BB'}}/>
+                </Link>
+            </button>
+            <button className="btn-details delete">
+                <Link to={`/edit?id=${id}`}>
+                    <BiTrash style={{color:'#EB5757'}}/>
+                </Link>
+            </button>
             <button value="2" className="btn-details view">
                 <Link to={`/view?id=${id}`}>
                     <AiOutlineEye style={{color: '#323232'}}/>

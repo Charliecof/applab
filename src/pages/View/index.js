@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactRoundedImage from 'react-rounded-image';
-import {data} from "../../utils/data";
 import {useSearchParams} from "react-router-dom";
 import './styles.scss'
+import {useSelector} from "react-redux";
 function Index() {
+    const data = useSelector(state => state.data.admins);
     const [searchParams, setSearchParams] = useSearchParams();
     const id = searchParams.get('id');
     const admin = data.find(element => element.id==id);
 
-    console.log(admin)
+    console.log(data,'admin')
     return (
         <div style={{backgroundColor:'#fff'}} className="container-fluid">
             <div className="template-view my-2 py-3">

@@ -2,14 +2,17 @@ import React from 'react';
 import AppTemplate from "../../templates/AppContainer";
 import './styles.scss';
 import ListElement from "../../components/ListElement";
-import {data} from "../../utils/data";
+import {useSelector} from "react-redux";
 
 
 function Index(props) {
+    const dataTable = useSelector(state => state.data);
+    console.log(dataTable)
     return (
         <AppTemplate>
             <div className="p-3">
-                <ListElement data={data} headers={['Administradores', 'Area', 'Email', 'Estatus', 'Detalles']}/>
+                <ListElement data={dataTable}
+                             headers={['Administradores', 'Area', 'Email', 'Estatus', 'Detalles']}/>
             </div>
         </AppTemplate>
     );
