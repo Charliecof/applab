@@ -3,7 +3,7 @@ import ReactRoundedImage from 'react-rounded-image';
 
 function Index({urlImage,name}) {
     return (
-        <div className="d-flex justify-content-end">
+        <div className="d-flex adminTuple ">
             <div >
 
                 <ReactRoundedImage image={urlImage}

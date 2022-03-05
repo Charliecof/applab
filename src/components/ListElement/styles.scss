@@ -30,6 +30,9 @@ table th {
 }
 
 @media screen and (max-width: 1000px) {
+  .adminTuple{
+    justify-content: flex-end;
+  }
   table {
     border: 0;
   }
