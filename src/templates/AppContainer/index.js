@@ -4,7 +4,6 @@ import './styles.scss'
 function Index({children}) {
     return (
         <div className="template-app">
-            <NavBar/>
             {children}
         </div>
     );

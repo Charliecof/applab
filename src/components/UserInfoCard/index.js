@@ -5,7 +5,6 @@ function Index({name,department,urlImage}) {
     return (
         <div className="d-flex profile-card align-items-center m-1">
             <div className="p-2">
-
                 <ReactRoundedImage
                     image={urlImage}
                     imageWidth="35"
@@ -13,7 +12,7 @@ function Index({name,department,urlImage}) {
                     roundedSize="2"
                 />
             </div>
-            <div>
+            <div className="d-xl-block d-md-block d-none d-xxl-block">
                 <p className="profile-text">{name}</p>
                 <p className="profile-text">{department}</p>
             </div>

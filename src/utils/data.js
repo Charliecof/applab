@@ -1,6 +1,7 @@
 export  const data = [
     {
-        name: 'Gustavo Korsgard',
+        name: 'Mario',
+        lastname: 'Korsgard',
         area: 'Recursos Humanos',
         email: 'gustavo@mail',
         status: true,
@@ -9,7 +10,8 @@ export  const data = [
         id: 1
     },
     {
-        name: 'Gustavo Korsgard2',
+        name: 'Moises',
+        lastname: 'Korsgard',
         area: 'Recursos Humanos',
         email: 'gustavo@mail',
         status: true,
@@ -18,7 +20,8 @@ export  const data = [
         id: 2
     },
     {
-        name: 'Gustavo Korsgard3',
+        name: 'Maria',
+        lastname: 'Korsgard',
         area: 'Recursos Humanos',
         email: 'gustavo@mail',
         status: true,
@@ -28,6 +31,7 @@ export  const data = [
     },
     {
         name: 'Gustavo Korsgard4',
+        lastname: 'Korsgard',
         area: 'Recursos Humanos',
         email: 'gustavo@mail',
         status: true,
@@ -36,7 +40,8 @@ export  const data = [
         id: 4
     },
     {
-        name: 'Gustavo Korsgard5',
+        name: 'Alejandro',
+        lastname: 'Korsgard',
         area: 'Recursos Humanos',
         email: 'gustavo@mail',
         status: false,

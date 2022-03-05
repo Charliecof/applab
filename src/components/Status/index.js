@@ -5,9 +5,9 @@ function Index({status}) {
     return (
         <>
             {status ?
-                <p className={status ? 'status-activo' : 'status-inactivo'}>Activo</p>
+                <p className={status ? 'status-activo' : 'status-inactivo'}>ACTIVO</p>
                 :
-                <p className={status ? 'status-activo' : 'status-inactivo'}>Inactivo</p>
+                <p className={status ? 'status-activo' : 'status-inactivo'}>INACTIVO</p>
             }
         </>
     );

@@ -2,10 +2,25 @@
   background-color: #E8F5E9;
   border-radius: 5px;
   color: #60B864;
+  width: 50%;
+  text-align: center;
 }
 
 .status-inactivo {
   background-color: #FFE1E0;
   color: #EB5757;
   border-radius: 5px;
+  width: 50%;
+text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .status-activo{
+    width: 100%;
+    text-align: end;
+  }
+  .status-inactivo{
+    width: 100%;
+    text-align: end;
+  }
 }

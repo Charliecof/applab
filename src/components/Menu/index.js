@@ -6,16 +6,26 @@ import {MdPeopleOutline, MdOutlineSchool} from 'react-icons/md';
 import {TiWarningOutline} from 'react-icons/ti';
 import {VscGraphLine} from 'react-icons/vsc';
 import {GiHamburgerMenu} from 'react-icons/gi'
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 
 function Index(props) {
     const [collapsed, setCollapsed] = useState(false);
     const stylesNames = collapsed ? 'menu-link-collapsed' : 'menu-link';
+    useEffect(()=>{
+        const handleResize = ()=>{
+            if(window.innerWidth<1000)
+                setCollapsed(true);
+            if(window.innerWidth>1000)
+                setCollapsed(false);
+        }
+        window.addEventListener('resize',handleResize)
+
+    })
     return (
         <ProSidebar collapsed={collapsed} style={{height: '100%'}}>
             <SidebarHeader className="menu-link">
                 <div className="d-flex justify-content-between">
-                    {!collapsed ? <p>Logo</p> : null}
+                    {!collapsed ? <img width="200" src="https://marineinsurer.co.uk/wp-content/uploads/2020/05/logo-dummy.png" alt=""/> : null}
                     <button onClick={() => setCollapsed(!collapsed)} className={!collapsed ? "btn-burguer" : "btn-burguer-collapsed"}><GiHamburgerMenu/></button>
                 </div>
             </SidebarHeader>

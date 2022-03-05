@@ -4,11 +4,11 @@ import Details from "../Details";
 import Status from "../Status";
 import Admin from "../Admin";
 const Index = ({data, headers})=> {
-    console.log(data)
-    const tableBody = data.admins.map(admin => {
+    console.log(data.admins)
+    const tableBody = data.map(admin => {
         return (
             <tr>
-                <td data-label="Administradores"><Admin name={admin.name} urlImage={admin.urlImage}/></td>
+                <td data-label="Administrador"><Admin name={admin.name} urlImage={admin.urlImage}/></td>
                 <td data-label="Area">{admin.area}</td>
                 <td data-label="Email">{admin.email}</td>
                 <td data-label="Estatus" >
